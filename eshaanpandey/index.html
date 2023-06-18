@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eshaan's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost&family=Montserrat&family=Poppins&family=Roboto&family=Rubik+Bubbles&family=Spline+Sans+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #f5efe7;
+        font-family: "Poppins", sans-serif;
+      }
+
+      a:active {
+        color: white;
+      }
+
+      nav {
+        background-color: #ebe4dc;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0px 23px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .right ul li a {
+        text-decoration: none;
+      }
+
+      .left h1 a {
+        text-decoration: none;
+      }
+
+      nav ul li:hover {
+        color: #090580;
+        transform: scale(1.1);
+      }
+
+      .left {
+        color: #090580;
+        font-size: 1.1rem;
+      }
+
+      .left h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+        font-size: 2rem;
+      }
+
+      /* Main */
+
+      .firstSection {
+        margin: 15px 0px;
+        padding: 0px 20px;
+      }
+
+      .mainSection {
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        width: 100%;
+        height: 50%;
+      }
+
+      .mainSection div {
+        width: 40%;
+        margin-bottom: 20px;
+      }
+
+      .leftSection {
+        /* background-color: blue; */
+        text-align: left;
+        /* color: red; */
+        color: #090580;
+        font-weight: bolder;
+        font-size: 3rem;
+        margin-top: 10%;
+        /* margin-bottom: 10%; */
+        margin-left: 20px;
+      }
+
+      .leftSection div {
+        width: 100%;
+        text-align: left;
+      }
+
+      .slide-left p {
+        animation: slide-left 5s;
+      }
+
+      @keyframes slide-left {
+        from {
+          margin-left: 100%;
+          width: 100%;
+        }
+
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+
+      .slide-left p span {
+        background-image: linear-gradient(to right, #8360c3, #2ebf91);
+      }
+
+      .slide-left button {
+        width: fit-content;
+        height: fit-content;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 7%;
+      }
+
+      .slide-left button:hover {
+        background-color: #ebe4dc;
+      }
+
+      .shine p {
+        position: relative;
+        font-size: 45px;
+        letter-spacing: 2px;
+        background: linear-gradient(90deg, #90ee90, #fff, #000);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        animation: animate 5s infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+      }
+
+      @keyframes animate {
+        0% {
+          background-position: -500%;
+        }
+        100% {
+          background-position: 500%;
+        }
+      }
+
+      .rightSection img {
+        height: 550px;
+        object-fit: contain;
+        width: 500px;
+        margin-bottom: 10px;
+      }
+
+      /* Second Section About Me */
+
+      .secondSection {
+        margin: 15px 0px;
+        padding: 0px 20px;
+      }
+
+      /* .secondSection h1 {
+            color: white;
+            font-weight: bold;
+            width: fit-content;
+            background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+          } */
+
+      .secondSection h1 {
+        border-radius: 5px;
+        color: black;
+        font-weight: bold;
+        width: fit-content;
+        background: inherit;
+        background-image: linear-gradient(
+          -225deg,
+          #fff4f4 0%,
+          #ffe7ce 29%,
+          #ece5c7 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        animation: textclip 2s linear infinite;
+        padding: 5px;
+      }
+
+      @keyframes textclip {
+        to {
+          background-position: 200% center;
+        }
+      }
+
+      .mainSecondSection {
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        width: 100%;
+        height: 50%;
+      }
+
+      .mainSecondSection div {
+        width: 40%;
+        margin-bottom: 20px;
+      }
+
+      .rightSecondSection {
+        margin: 10px 0px;
+      }
+
+      .rightSecondSection img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .leftSecondSection {
+        margin: 10px 0px;
+        color: white;
+      }
+
+      .leftSecondSection span {
+        color: #ff8551;
+      }
+
+      /* Third Section My Projects */
+
+      .thirdSection {
+        margin: 15px 0px;
+        padding: 0px 20px;
+      }
+
+      .mainThirdSection {
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        width: 100%;
+        height: 50%;
+      }
+
+      .leftThirdSection {
+        margin: 10px 0px;
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        justify-content: space-around;
+      }
+
+      /* .thirdSection h1 {
+            color: white;
+            font-weight: bold;
+            width: fit-content;
+            background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+          } */
+
+      .thirdSection h1 {
+        border-radius: 5px;
+        color: black;
+        font-weight: bold;
+        width: fit-content;
+        background: inherit;
+        background-image: linear-gradient(
+          -225deg,
+          #fff4f4 0%,
+          #ffe7ce 29%,
+          #ece5c7 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        animation: textclipthree 2s linear infinite;
+        padding: 5px;
+      }
+
+      @keyframes textclipthree {
+        to {
+          background-position: 200% center;
+        }
+      }
+
+      .card {
+        background-color: #f5efe7;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        border-radius: 15px;
+        padding: 5px;
+        object-fit: contain;
+      }
+
+      .card:hover {
+        transform: scale(1.1);
+      }
+
+      .card img {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+
+      .card div {
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+
+      .card div a {
+        text-decoration: none;
+      }
+
+      /* Fourth Section Contact Me */
+
+      .fourthSection {
+        margin: 15px 0px;
+        padding: 0px 20px;
+      }
+
+      .mainFourthSection {
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        width: 100%;
+        height: 50%;
+      }
+
+      .leftFourthSection {
+        margin: 10px 0px;
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        justify-content: space-around;
+      }
+
+      /* .fourthSection h1 {
+            color: white;
+            font-weight: bold;
+            width: fit-content;
+            background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+          } */
+
+      .fourthSection h1 {
+        border-radius: 5px;
+        color: black;
+        font-weight: bold;
+        width: fit-content;
+        background: inherit;
+        background-image: linear-gradient(
+          -225deg,
+          #fff4f4 0%,
+          #ffe7ce 29%,
+          #ece5c7 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        animation: textclipfour 2s linear infinite;
+        padding: 5px;
+      }
+
+      @keyframes textclipfour {
+        to {
+          background-position: 200% center;
+        }
+      }
+
+      .cardContact {
+        background-color: #f5efe7;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        border-radius: 15px;
+        padding: 5px;
+        object-fit: contain;
+      }
+
+      .cardContact:hover {
+        transform: scale(1.1);
+      }
+
+      .cardContact img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+
+      .cardContact div {
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .cardContact div a {
+        text-decoration: none;
+      }
+
+      /* Fifth Section Coding Profile */
+      .fifthSection {
+        margin: 15px 0px;
+        padding: 0px 20px;
+      }
+
+      .mainFifthSection {
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        width: 100%;
+        height: 50%;
+      }
+
+      .leftFifthSection {
+        margin: 10px 0px;
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        justify-content: space-around;
+      }
+
+      /* .fifthSection h1 {
+            color: white;
+            font-weight: bold;
+            width: fit-content;
+            background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+          } */
+
+      .fifthSection h1 {
+        border-radius: 5px;
+        color: black;
+        font-weight: bold;
+        width: fit-content;
+        background: inherit;
+        background-image: linear-gradient(
+          -225deg,
+          #fff4f4 0%,
+          #ffe7ce 29%,
+          #ece5c7 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        animation: textclipfive 2s linear infinite;
+        padding: 5px;
+      }
+
+      @keyframes textclipfive {
+        to {
+          background-position: 200% center;
+        }
+      }
+
+      /* Sixth Section Languages Known */
+      .sixthSection {
+        margin: 15px 0px;
+        padding: 0px 20px;
+      }
+
+      .mainSixthSection {
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        width: 100%;
+        height: 50%;
+      }
+
+      .leftSixthSection {
+        margin: 10px 0px;
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .sixthSection h1 {
+        border-radius: 5px;
+        color: black;
+        font-weight: bold;
+        width: fit-content;
+        background: inherit;
+        background-image: linear-gradient(
+          -225deg,
+          #fff4f4 0%,
+          #ffe7ce 29%,
+          #ece5c7 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        animation: textclipfive 2s linear infinite;
+        padding: 5px;
+      }
+
+      @keyframes textclipfive {
+        to {
+          background-position: 200% center;
+        }
+      }
+
+      .cardLanguage {
+        background-color: #f5efe7;
+        width: 130px;
+        height: 130px;
+        margin: 10px;
+        border-radius: 15px;
+        padding: 5px;
+        object-fit: contain;
+      }
+
+      .cardLanguage:hover {
+        transform: scale(1);
+      }
+
+      .cardLanguage img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+
+      .cardLanguage div {
+        font-size: 0.7rem;
+        font-weight: bold;
+        text-align: center;
+        color: #551a8b;
+      }
+
+      .cardLanguage div a {
+        text-decoration: none;
+      }
+
+      /* footer */
+      footer {
+        background-color: #e9e2da;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: normal;
+      }
+
+      .heart {
+        display: inline-block;
+        /* Animation */
+        transform: scale(1);
+        animation: pulse 2s linear infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1.1);
+          opacity: 0;
+        }
+        50% {
+          transform: scale(1.2);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      /* Responsiveness */
+      @media only screen and (max-width: 1045px) {
+        .mainSection {
+          flex-direction: column;
+        }
+
+        .rightSection img {
+          height: 100%;
+          object-fit: contain;
+          width: 100%;
+          /* margin-bottom: 10px; */
+        }
+
+        .mainSection div {
+          width: 85%;
+          /* background-color: red; */
+        }
+        .mainSecondSection {
+          flex-direction: column;
+          /* width: 100%; */
+          /* background-color: red; */
+          /* display: flex;
+            justify-content: space-around;
+            background-color: black;
+            height: 50%; */
+        }
+
+        .mainSecondSection div {
+          width: 95%;
+          margin-bottom: 5px;
+          padding: 10px;
+        }
+
+        .leftThirdSection {
+          /* margin: 10px 0px;
+          color: white;
+          width: 100%;
+          height: 100%; */
+          /* display: flex; */
+          flex-direction: column;
+          /* flex-wrap: wrap; */
+          /* justify-content: space-around; */
+        }
+
+        .card {
+          margin: auto;
+          margin-bottom: 5%;
+        }
+
+        .leftFourthSection {
+          flex-direction: column;
+        }
+
+        .leftFifthSection {
+          flex-direction: column;
+        }
+
+        .cardContact {
+          margin: auto;
+          margin-bottom: 5%;
+        }
+
+        nav {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <h1><a href="#">My Portfolio</a></h1>
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#coding">Coding Profiles</a></li>
+            <li><a href="#languages">Skills</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="mainSection">
+          <div class="leftSection">
+            <span style="color: white">Hello, My Name is</span>
+            <div class="shine">
+              <p>Eshaan Pandey</p>
+            </div>
+            <div class="slide-left">
+              <p>
+                I am a
+                <span>Full-Stack Developer</span>
+              </p>
+              <button>
+                <a
+                  style="text-decoration: none"
+                  href="./Eshaan_Pandey.pdf"
+                  download="Eshaan_SDE"
+                  target="_blank"
+                >
+                  Download Resume
+                </a>
+              </button>
+              <button>
+                <a
+                  style="text-decoration: none"
+                  href="https://drive.google.com/file/d/1M8ISiThFcYIUQivLU-PKgOGQLiYMI1eF/view?usp=drive_link"
+                  download="Eshaan_SDE"
+                  target="_blank"
+                >
+                  View Resume
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="rightSection">
+            <img src="./eshaanbg.png" alt="My Image" />
+          </div>
+        </div>
+      </section>
+      <section class="secondSection" id="aboutMe">
+        <h1>
+          <span style="color: #551a8b">About Me</span>
+          <i class="fa-solid fa-address-card"></i>
+        </h1>
+        <br />
+        <div class="mainSecondSection">
+          <div class="leftSecondSection">
+            <p>
+              My Name is Eshaan Pandey. I am an
+              <span>Computer Science and Electronics Engineering Graduate</span>
+              (2020-2024) from
+              <span>Shree L.R Tiwari College Of Engineering</span>. I live in
+              <span>Mumbai, India</span> and have an interest in software
+              development. I build websites which can be used by people and
+              businesses to showcase their products and interact with their
+              customers.
+              <span> I am an experienced web developer specializing in building WebApps and websites using the MERN Stack. </span> I
+              have experience of
+              <span
+                >working as a Software Engineer Intern for a product-based
+                startup.</span
+              >
+              I love to constantly seek out innovative solutions to everyday
+              problems.
+              <span
+                >I have an impressive portfolio of projects, showcasing my expertise, and have honed my skills by solving over 1000+ problems in Data Structures and Algorithms.</span
+              >. My hobbies include going to the gym, playing Cricket, reading books and
+              writing blogs. My
+              <span
+                >ultimate career goal is to advance in the field of software development. I am eager to continuously learn and stay updated with emerging technologies, incorporating them into my daily work. 
+                </span
+              >
+              By constantly seeking new challenges and embracing a growth mindset, I am confident in my ability to excel in this dynamic field.
+            </p>
+          </div>
+          <div class="rightSecondSection">
+            <img src="./about3.jpg" alt="About Me" />
+          </div>
+        </div>
+      </section>
+      <section class="thirdSection" id="projects">
+        <h1>
+          <span style="color: #551a8b">My Projects</span>
+          <i class="fa-solid fa-briefcase"></i>
+        </h1>
+        <br />
+        <div class="mainThirdSection">
+          <div class="leftThirdSection">
+            <div class="card">
+              <img src="./blogg4.png" alt="1st project" />
+              <div>
+                <h2>
+                  <a href="https://hashblog-brown.vercel.app/" target="_blank"
+                    >HashBlog</a
+                  >
+                </h2>
+                <p>
+                  <a
+                    style="color: #ff8551"
+                    href="https://hashblog-brown.vercel.app/"
+                    target="_blank"
+                    >View Live</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./pro2.webp" alt="2nd project" />
+              <div>
+                <h2>
+                  <a href="https://foodtastic.vercel.app/" target="_blank"
+                    >FoodTastic</a
+                  >
+                </h2>
+                <p>
+                  <a
+                    style="color: #ff8551"
+                    href="https://foodtastic.vercel.app/"
+                    target="_blank"
+                    >View Live</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./converse.jpg" alt="3rd project" />
+              <div>
+                <h2>
+                  <a href="https://codexgpt-eta.vercel.app/" target="_blank"
+                    >Converse-AI</a
+                  >
+                </h2>
+                <p>
+                  <a
+                    style="color: #ff8551"
+                    href="https://codexgpt-eta.vercel.app/"
+                    target="_blank"
+                    >View Live</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./recipe1.jfif" alt="4th project" />
+              <div>
+                <h2>
+                  <a href="https://foodiebay.vercel.app/" target="_blank">RecipeXpress </a>
+                </h2>
+                <p>
+                  <a
+                    style="color: #ff8551"
+                    href="https://foodiebay.vercel.app/"
+                    target="_blank"
+                    >View Live</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <a
+                style="text-decoration: none"
+                href="https://eshaan446.github.io/cryptohunter/"
+                target="_blank"
+              >
+                <img src="./btc2.avif" alt="My all repositories" />
+                <div>
+                  <h2>CryptoTracker</h2>
+                  <p>
+                    <a
+                      style="color: #ff8551"
+                      href="https://eshaan446.github.io/cryptohunter/"
+                      target="_blank"
+                      >View Live</a
+                    >
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Me Section -->
+      <section class="fourthSection" id="contact">
+        <h1>
+          <span style="color: #551a8b">Contact Me</span>
+          <i class="fa-solid fa-address-book"></i>
+        </h1>
+        <br />
+        <div class="mainFourthSection">
+          <div class="leftFourthSection">
+            <div class="cardContact">
+              <a
+                style="text-decoration: none"
+                href="https://www.linkedin.com/in/eshaanpandey/"
+                target="_blank"
+              >
+                <img src="./con1.png" alt="My LinkedIn" />
+                <div>
+                  <h2>LinkedIn</h2>
+                </div>
+              </a>
+            </div>
+            <div class="cardContact">
+              <a
+                style="text-decoration: none"
+                href="https://github.com/eshaan446"
+                target="_blank"
+              >
+                <img src="./con2.webp" alt="My Github" />
+                <div>
+                  <h2>Github</h2>
+                </div>
+              </a>
+            </div>
+            <div class="cardContact">
+              <a
+                style="text-decoration: none"
+                href="https://twitter.com/eshaan540"
+                target="_blank"
+              >
+                <img src="./twitter.png" alt="My Instagram" />
+                <div>
+                  <h2>Twitter</h2>
+                </div>
+              </a>
+            </div>
+            <div class="cardContact">
+              <a
+                style="text-decoration: none"
+                href="mailto: eshaanpandeyk540@gmail.com"
+                target="_blank"
+              >
+                <img src="./con4.png" alt="My Gmail" />
+                <div>
+                  <h2>Gmail</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fifth Section Coding Profiles -->
+      <section class="fifthSection" id="coding">
+        <h1>
+          <span style="color: #551a8b">Coding Profiles</span>
+          <i class="fa-solid fa-user"></i> <i class="fa-solid fa-code"></i>
+        </h1>
+        <br />
+        <div class="mainFifthSection">
+          <div class="leftFifthSection">
+            <div class="cardContact">
+              <a
+                style="text-decoration: none"
+                href="https://leetcode.com/eshaan446/"
+                target="_blank"
+              >
+                <img src="./cp1.png" alt="My Leetcode profile" />
+                <div>
+                  <h2>Leetcode</h2>
+                </div>
+              </a>
+            </div>
+            <div class="cardContact">
+              <a
+                style="text-decoration: none"
+                href="https://auth.geeksforgeeks.org/user/eshaan446/practice"
+                target="_blank"
+              >
+                <img src="./cp2.png" alt="My CodeStudio Profile" />
+                <div>
+                  <h2>GeeksForGeeks</h2>
+                </div>
+              </a>
+            </div>
+            <div class="cardContact">
+              <a
+                style="text-decoration: none"
+                href="https://www.codingninjas.com/codestudio/profile/d40d7a6c-ca16-4dab-a8ae-5b09dfbf3d97"
+                target="_blank"
+              >
+                <img src="./cp3.png" alt="My GFG" />
+                <div>
+                  <h2>Codestudio</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sixth Section Languages Known -->
+      <section class="sixthSection" id="languages">
+        <h1>
+          <span style="color: #551a8b">Skills & Abilities</span>
+          <i class="fa-solid fa-computer"></i>
+        </h1>
+        <br />
+        <div class="mainSixthSection">
+          <div class="leftSixthSection">
+            <div class="cardLanguage">
+              <img src="./l0.png" alt="C++" />
+              <div>
+                <h2>C++</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./l1.png" alt="JS" />
+              <div>
+                <h2>Javascript</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./html1.webp" alt="HTML" />
+              <div>
+                <h2>HTML5</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./css2.png" alt="CSS" />
+              <div>
+                <h2>CSS3</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./l4.png" alt="React" />
+              <div>
+                <h2>React</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./l5.png" alt="Node" />
+              <div>
+                <h2>Node</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./go.png" alt="Firebase" />
+              <div>
+                <h2>Golang</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./l7.png" alt="Redux" />
+              <div>
+                <h2>Redux</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./l8.png" alt="Express" />
+              <div>
+                <h2>Express</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./l9.webp" alt="MaterialUI" />
+              <div>
+                <h2>Material UI</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./l10.avif" alt="Bootstrap" />
+              <div>
+                <h2>Bootstrap</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./l11.png" alt="Tailwind CSS" />
+              <div>
+                <h2>Tailwind CSS</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./l12.png" alt="Mongodb" />
+              <div>
+                <h2>MongoDB</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./sql.png" alt="Heroku" />
+              <div>
+                <h2>MySQL</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./l14.png" alt="Netlify" />
+              <div>
+                <h2>Netlify</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./l15.webp" alt="Github" />
+              <div>
+                <h2>Github</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./l16.jpg" alt="NextJS" />
+              <div>
+                <h2>NextJS</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./l15.webp" alt="Github" />
+              <div>
+                <h2>Github</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./typescript.png" alt="Typescript" />
+              <div>
+                <h2>Typescript</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./l18.png" alt="Stripe" />
+              <div>
+                <h2>Stripe</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./l19.webp" alt="Postman" />
+              <div>
+                <h2>Postman</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./linux1.png" alt="Linux" />
+              <div>
+                <h2>Linux</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./gcp.png" alt="Linux" />
+              <div>
+                <h2>GCP</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./java.jpg" alt="Linux" />
+              <div>
+                <h2>Java</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./python.png" alt="Linux" />
+              <div>
+                <h2>Python</h2>
+              </div>
+            </div>
+            <div class="cardLanguage">
+              <img src="./vercel.jpg" alt="Linux" />
+              <div>
+                <h2>Vercel</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        Designed with
+        <div class="heart">❤️</div>
+        by Eshaan
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/aaf9fca085.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
